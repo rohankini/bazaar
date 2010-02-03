@@ -1,0 +1,51 @@
+.items {
+  width: 300px;
+  padding: 50px;
+}
+
+.item { 
+  width: 300px;
+  height: 340px;
+  padding: 30px;
+  float: left;
+}
+
+.item > li {
+  text-decoration: none;
+}
+  
+.box1 { 
+  padding: 10px;
+  background: transparent url(/images/box1.png) no-repeat scroll left top; 
+}
+
+.box2 { 
+  padding: 10px;
+  background: transparent url(/images/box2.png) no-repeat scroll left top; 
+}
+
+.box3 { 
+  padding: 10px;
+  background: transparent url(/images/box3.png) no-repeat scroll left top; 
+}
+
+.item .title {
+  border-bottom:3px solid #E8E8E8;
+  color:#222222;
+  font-size: 1.3em;
+  padding: 4px;  
+}
+
+.item .price {
+  padding: 4px;
+  font-size: 1.1em;
+}
+
+.item .image {
+  padding: 4px;
+  border-top:1px solid #CCCCCC;
+}
+
+.item .city {
+  color:#999999;
+}

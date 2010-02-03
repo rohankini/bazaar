@@ -1,0 +1,16 @@
+%li.item
+  .box
+    %br= item.description
+    %br= image_tag item.assets.first.url(:thumb)
+    %br= item.company.name if item.company
+    %br= item.model
+    %br= item.price
+
+    %br= item.owner_name
+    %br= item.color
+    %br= item.bought_on
+    %br= item.email
+    %br= item.phone_number
+    %br= item.city
+    %br= item.state
+    %br= item.address

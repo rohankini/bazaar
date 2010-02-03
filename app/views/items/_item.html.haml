@@ -1,0 +1,9 @@
+blah asdhjkasd
+%a{:href => "a"}
+  %li.item
+    %div{:class => ""}
+      %span.title= [item.company.try(:name), item.model].compact.join(" - ").to_s
+      %p
+        %span.price= "Rs. #{item.price}"
+        %span.city= item.city
+      .image= image_tag item.assets.first.url(:thumb)
