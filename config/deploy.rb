@@ -97,7 +97,6 @@ task :mate_logs, :roles => :app do
   tmp.close
 end
 
-
 desc "remotely console" 
 task :console, :roles => :app do
   input = ''
