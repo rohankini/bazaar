@@ -1,0 +1,3 @@
+Useful Rake tasks
+
+rake db:load - recreates the database and loads with some test data for development
