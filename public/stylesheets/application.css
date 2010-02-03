@@ -1,6 +1,14 @@
+a:link, a:hover, a:visited, a:active {
+  color: black;
+}
+
+.container {
+	overflow: auto;
+	width: 100%  
+}
+
 .items {
-  padding: 50px;
-  width: 800px;
+  width: 70%;
 }
 
 .item { 
@@ -10,11 +18,32 @@
   float: left;
 }
 
+.item .content {
+  border: 10px solid #D0CABC;
+  color:#333333;
+  padding: 10px;
+}
+
+.itemInfo {
+  border: 2px black;
+}
+
+.item .content:hover {
+  border-color:#E3402F;
+}
+
+
+/*.item .content {
+  border: 1px red;
+  width: 100%;
+  height: 100%;
+}
+*/
 .items li {
   list-style-type:none;
 }
 
-a img {
+a, a img {
   text-decoration: none;
   border: 0;
 }
