@@ -1,6 +1,5 @@
-blah asdhjkasd
-%a{:href => "a"}
-  %li.item
+%li.item
+  %a{:href => item_url(item) }
     %div{:class => ""}
       %span.title= [item.company.try(:name), item.model].compact.join(" - ").to_s
       %p

@@ -1,6 +1,6 @@
 .items {
-  width: 300px;
   padding: 50px;
+  width: 800px;
 }
 
 .item { 
@@ -10,8 +10,13 @@
   float: left;
 }
 
-.item > li {
+.items li {
+  list-style-type:none;
+}
+
+a img {
   text-decoration: none;
+  border: 0;
 }
   
 .box1 { 
