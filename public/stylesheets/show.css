@@ -1,0 +1,18 @@
+* {
+  font-family: Arial, Helvetica, Tahoma, sans-serif;
+}
+
+.container {
+  overflow: auto;
+	width: 100%  
+}
+
+.container .col1 {
+  width: 55%;
+  float: left;
+}
+
+.container .col2 {
+  width: 44%;
+  float: left;
+}

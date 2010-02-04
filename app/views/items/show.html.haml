@@ -1,0 +1,20 @@
+= stylesheet_link_tag 'show'
+
+%li.container
+  %h2= item_model(@item)
+  .col1
+    = image_tag @item.assets.first.url(:medium)
+  
+  .col2
+    %h3= @item.price
+    %p
+      %h4 Description
+      = @item.description
+      
+    %p
+      %h4 Owner Info
+      = @item.owner_name
+      = @item.bought_on
+      = @item.email
+      = @item.phone_number
+      = @item.city
