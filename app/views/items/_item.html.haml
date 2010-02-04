@@ -2,7 +2,7 @@
   .content
     %a{:href => item_url(item) }
       .itemInfo
-        %span.title= [item.company.try(:name), item.model].compact.join(" - ").to_s
+        %span.title= item_model(item)
         %p
           %span.price= "Rs. #{item.price}"
           %span.city= item.city
