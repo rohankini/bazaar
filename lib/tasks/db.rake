@@ -32,8 +32,8 @@ module Builder
       item.email = Faker::Internet.email
       item.phone_number = Faker::PhoneNumber.phone_number
 
-      item.city = Faker::Address.city
-      item.state = Faker::Address.us_state
+      item.city = ['Bangalore', 'Delhi', 'Mumbai']
+      item.state = ['Karnataka', 'Kerala']
       item.address = Populator.words(10..20)
     end
     Item.all.each {|i| i.assets << Asset.new(:data => File.open(random_bike_image)) }

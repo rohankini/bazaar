@@ -1,5 +1,6 @@
-Filter Bar 
-- form_tag filter_items_url do
-  = select_tag 'company', options_for_select(Company.all.collect(&:name).uniq), :include_blank => true
-  = select_tag 'city', options_for_select(Item.all.collect(&:city).uniq), :include_blank => true
-  = submit_tag
+.filterBar
+  Filter Bar
+  - form_tag filter_items_url do
+    Show me all da Bikes from 
+    = select_tag 'company', options_for_select(Company.all.collect(&:name).uniq), :include_blank => true
+    = submit_tag
