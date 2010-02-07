@@ -2,14 +2,23 @@ a:link, a:hover, a:visited, a:active {
   color: black;
 }
 
+.mainPanel {
+  width: 69%;
+  float: left;
+  border: 1px solid;
+}
+
+.rightPanel {
+  width: 29%; 
+  float: left;
+  border: 1px solid;
+}
+
 .container {
 	overflow: auto;
 	width: 100%  
 }
 
-.items {
-  width: 70%;
-}
 
 .item { 
   width: 300px;
