@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_filter :load_city_tags
+  before_filter :load_tag_clouds
   
   def index
     @items = Item.all
@@ -21,7 +21,8 @@ class ItemsController < ApplicationController
     render :action => 'index'
   end
   
-  def load_city_tags
-    @tags = Item.all.collect(&:city)
+  def load_tag_clouds
+    @cities = Item.all.collect(&:city)
+    @brands = Item.all.collect {|i| i.company.try(:name) }
   end
 end

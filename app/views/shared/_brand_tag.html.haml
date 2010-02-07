@@ -1,0 +1,4 @@
+.heading
+  Brand Tag Cloud
+- tag_cloud(@brands, %w(css1 css2 css3 css4)) do |tag, css_class|
+  %span.cloudItem= link_to tag, filter_items_url(:company => tag), :class => css_class

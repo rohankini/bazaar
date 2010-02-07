@@ -3,15 +3,15 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .mainPanel {
-  width: 69%;
+  width: 70%;
   float: left;
-  border: 1px solid;
+/*  border: 1px solid;*/
 }
 
 .rightPanel {
   width: 29%; 
   float: left;
-  border: 1px solid;
+/*  border: 1px solid;*/
 }
 
 .container {
@@ -19,6 +19,13 @@ a:link, a:hover, a:visited, a:active {
 	width: 100%  
 }
 
+.heading {
+  font-size: 1.3em
+}
+
+.subHeading {
+  font-size: 1.1em
+}
 
 .item { 
   width: 300px;
@@ -93,7 +100,15 @@ a, a img {
   color:#999999;
 }
 
+/* tag clouds */
 .css1 { font-size: 1.0em; }
 .css2 { font-size: 1.2em; }
 .css3 { font-size: 1.4em; }
 .css4 { font-size: 1.6em; }
+.cloudItem a {
+  color: #333;
+}
+
+.tagCloud {
+  padding: 10px;
+}
