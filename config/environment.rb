@@ -27,6 +27,7 @@ Rails::Initializer.run do |config|
   config.gem 'populator', :source => 'http://gemcutter.org'
   config.gem 'seed-fu', :source => 'http://gemcutter.org'
   config.gem 'faker', :source => 'http://gemcutter.org'
+  config.gem 'acts_as_commentable', :source => 'http://gemcutter.org'
   
   # gem 'limerick-rake', :source => 'http://gemcutter.org'
   

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100206025726) do
+ActiveRecord::Schema.define(:version => 20100211160256) do
 
   create_table "assets", :force => true do |t|
     t.string   "data_file_name"
@@ -21,6 +21,20 @@ ActiveRecord::Schema.define(:version => 20100206025726) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "comments", :force => true do |t|
+    t.string   "title",            :limit => 50
+    t.text     "comment"
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comments", ["commentable_id"], :name => "index_comments_on_commentable_id"
+  add_index "comments", ["commentable_type"], :name => "index_comments_on_commentable_type"
+  add_index "comments", ["user_id"], :name => "index_comments_on_user_id"
 
   create_table "companies", :force => true do |t|
     t.text     "name"
@@ -60,6 +74,10 @@ ActiveRecord::Schema.define(:version => 20100206025726) do
   add_index "taggings", ["taggable_id", "taggable_type", "context"], :name => "index_taggings_on_taggable_id_and_taggable_type_and_context"
 
   create_table "tags", :force => true do |t|
+    t.string "name"
+  end
+
+  create_table "users", :force => true do |t|
     t.string "name"
   end
 

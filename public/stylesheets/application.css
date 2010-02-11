@@ -1,3 +1,6 @@
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,  
+pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+
 a:link, a:hover, a:visited, a:active {
   color: black;
 }
@@ -20,7 +23,8 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .heading {
-  font-size: 1.3em
+  font-size: 1.3em;
+  color: #C43F2C;
 }
 
 .subHeading {
