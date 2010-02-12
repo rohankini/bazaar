@@ -7,12 +7,17 @@ namespace :db do
   task :load => [:environment, :drop, :create, :migrate, :unload] do
     require 'populator'
 
+    Builder::create_users
     Builder::create_companies
     Builder::create_items
   end
 end
 
 module Builder
+  def self.create_users
+    User.create! :email => 'rohan.kini@gmail.com', :password => 'password', :password_confirmation => 'password'
+  end
+  
   def self.create_companies
     Company.populate(5) do |company|
       company.name = ['Trek', 'Cannondale', 'Merida', 'Kona', 'Giant']
