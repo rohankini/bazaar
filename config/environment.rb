@@ -28,10 +28,6 @@ Rails::Initializer.run do |config|
   config.gem 'seed-fu', :source => 'http://gemcutter.org'
   config.gem 'faker', :source => 'http://gemcutter.org'
   config.gem 'awesome_nested_set', :source => 'http://gemcutter.org'
-  # authentication gems
-  config.gem 'authlogic', :source => 'http://gemcutter.org'
-  # config.gem 'rpx_now', :source => 'http://gemcutter.org'
-  # config.gem 'authlogic_rpx', :source => 'http://gemcutter.org'
   # config.gem 'acts_as_commentable_with_threading'
   
   # gem 'limerick-rake', :source => 'http://gemcutter.org'
