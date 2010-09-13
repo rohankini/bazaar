@@ -22,6 +22,7 @@ Rails::Initializer.run do |config|
   # config.gem 'formtastic', :version => '>= 0.9.7'
 
   config.gem 'paperclip'
+  config.gem 'sqlite3'
   config.gem 'haml', :source => 'http://gemcutter.org'
   config.gem 'mocha', :source => 'http://gemcutter.org'
   config.gem 'populator', :source => 'http://gemcutter.org'
