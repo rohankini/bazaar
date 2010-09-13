@@ -1,7 +1,16 @@
+login: &login
+  adapter: mysql
+  username: root
+  password: 
+  encoding: utf8    
+<% sockets = %w(/tmp/mysql.sock /var/lib/mysql/mysql.sock /var/run/mysqld/mysqld.sock /var/run/mysqld/mysqld.sock /usr/local/mysql/tmp/mysql.sock /opt/local/var/run/mysql5//mysqld.sock) %>
+<% socket = sockets.detect{|socket| File.exists? socket } %>
+  socket: <%= socket %>
+
 development:
-  adapter: sqlite3
-  database: marketplace.sqlite3
+  database: bazaar_dev
+  <<: *login
   
 test:
-  adapter: sqlite3
-  database: marketplace.test.sqlite3
+  database: bazaar_test
+  <<: *login
